@@ -1,3 +1,312 @@
 html {
   scroll-behavior: smooth;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #2f2237;
+  background: #ffffff;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Bitter", Georgia, serif;
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.site-header {
+  background: #9ebaef;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 110px;
+}
+
+.menu-toggle {
+  display: none;
+  position: absolute;
+  left: 24px;
+  top: 32px;
+  background: transparent;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #3b0014;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  gap: 34px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #3b0014;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.logo-wrap {
+  position: absolute;
+  right: 24px;
+  top: 18px;
+}
+
+.logo {
+  width: 230px;
+  max-width: 100%;
+}
+
+.row {
+  width: 100%;
+}
+
+.row-content {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.intro-row {
+  background: #e9e7ef;
+  min-height: 700px;
+}
+
+.intro-text {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.intro-text h1 {
+  color: #6f4cff;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  margin-bottom: 22px;
+}
+
+.intro-text p {
+  font-size: 1.9rem;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+.about-row {
+  background: #9ebaef url("2_2bl_1.png") top center no-repeat;
+  color: #fffcf0;
+  padding: 70px 0;
+}
+
+.about-text h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.small-accent-image {
+  max-width: 420px;
+  margin-top: 18px;
+}
+
+.collection-hero {
+  background: #e9e7ef;
+  padding: 50px 0;
+}
+
+.collection-text {
+  text-align: center;
+}
+
+.collection-text h2 {
+  color: #6c4dc3;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  margin-bottom: 20px;
+}
+
+.collection-text p {
+  font-size: 1.7rem;
+  line-height: 1.4;
+}
+
+.tiny-accent-image {
+  width: 150px;
+  margin: 25px auto 0;
+}
+
+.gallery-section {
+  background: url("2_2bl_1.png") center/cover no-repeat;
+  padding: 50px 24px 70px;
+}
+
+.gallery-grid {
+  max-width: 1310px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.socials-banner-row {
+  background: #f0d8e9;
+  padding: 60px 0;
+}
+
+.socials-row {
+  background: #ffffff;
+  padding: 40px 0 50px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  color: #4d3d59;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    justify-content: flex-start;
+    min-height: 88px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-list {
+    display: none;
+    position: absolute;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    background: #9ebaef;
+    flex-direction: column;
+    gap: 0;
+    padding: 12px 0;
+    text-align: center;
+    border-top: 1px solid rgba(59, 0, 20, 0.12);
+  }
+
+  .menu-list.show {
+    display: flex;
+  }
+
+  .menu-list li {
+    padding: 12px 0;
+  }
+
+  .logo-wrap {
+    right: 16px;
+    top: 18px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-row {
+    min-height: auto;
+    padding: 20px 0 40px;
+  }
+
+  .intro-text {
+    padding-bottom: 0;
+  }
+
+  .intro-text p {
+    font-size: 1.35rem;
+  }
+
+  .about-text,
+  .collection-text {
+    text-align: center;
+  }
+
+  .small-accent-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .menu-list a {
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 125px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-icons img {
+    width: 34px;
+    height: 34px;
+  }
+}
