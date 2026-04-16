@@ -1,7 +1,7 @@
 function showSection(sectionId) {
-  const allSections = document.querySelectorAll(".section");
+  const sections = document.querySelectorAll(".section");
 
-  allSections.forEach((section) => {
+  sections.forEach(section => {
     section.style.display = "none";
   });
 
@@ -17,3 +17,7 @@ function showSection(sectionId) {
     document.getElementById(sectionId).style.display = "block";
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  showSection("intro");
+});
