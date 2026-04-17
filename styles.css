@@ -18,8 +18,6 @@ img {
   display: block;
 }
 
-/* ================= MENU ================= */
-
 .menu {
   display: flex;
   justify-content: center;
@@ -74,8 +72,6 @@ img {
   z-index: 3;
 }
 
-/* ================= SECTIONS ================= */
-
 .page-section {
   padding: 70px 20px;
 }
@@ -95,9 +91,8 @@ img {
 
 .socials-section {
   text-align: center;
+  background: #ffffff;
 }
-
-/* ================= LAYOUT ================= */
 
 .two-column {
   max-width: 1200px;
@@ -148,8 +143,6 @@ img {
   margin: 20px auto 0;
 }
 
-/* ================= GALLERY ================= */
-
 .gallery-section {
   padding: 60px 20px;
 }
@@ -170,23 +163,30 @@ img {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
-/* ================= SOCIAL ICONS ================= */
-
 .icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 18px;
   flex-wrap: wrap;
   margin-top: 25px;
 }
 
+.icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+}
+
 .icons img {
   width: 40px;
   height: 40px;
+  max-width: 40px;
+  max-height: 40px;
   object-fit: contain;
 }
-
-/* ================= FOOTER ================= */
 
 .footer-text {
   margin-top: 35px;
@@ -194,10 +194,7 @@ img {
   font-size: 0.95rem;
 }
 
-/* ================= MOBILE ================= */
-
 @media (max-width: 768px) {
-
   .menu {
     justify-content: flex-start;
   }
@@ -254,8 +251,15 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .icons a {
+    width: 40px;
+    height: 40px;
+  }
+
   .icons img {
     width: 32px;
     height: 32px;
+    max-width: 32px;
+    max-height: 32px;
   }
 }
