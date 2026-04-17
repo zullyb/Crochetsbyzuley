@@ -1,3 +1,5 @@
+/* ================= BASE ================= */
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,6 +19,8 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/* ================= MENU ================= */
 
 .menu {
   display: flex;
@@ -72,6 +76,8 @@ img {
   z-index: 3;
 }
 
+/* ================= SECTIONS ================= */
+
 .page-section {
   padding: 70px 20px;
 }
@@ -89,14 +95,19 @@ img {
   background: #f3eef9;
 }
 
+/* 🌸 Pink banner (socials) */
 .socials-banner {
   background: #f0d8e9;
+  padding: 80px 20px;
 }
 
+/* 🌸 Bottom socials section */
 .socials-section {
   text-align: center;
-  background: #ffffff;
+  background: #f3f3f3;
 }
+
+/* ================= LAYOUT ================= */
 
 .two-column {
   max-width: 1200px;
@@ -148,6 +159,8 @@ img {
   margin: 20px auto 0;
 }
 
+/* ================= GALLERY ================= */
+
 .gallery-section {
   padding: 60px 20px;
 }
@@ -168,6 +181,8 @@ img {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
+/* ================= SOCIAL ICONS ================= */
+
 .icons {
   display: flex;
   justify-content: center;
@@ -177,6 +192,7 @@ img {
   margin-top: 25px;
 }
 
+/* Equal box for each icon */
 .icons a {
   display: flex;
   justify-content: center;
@@ -185,6 +201,7 @@ img {
   height: 48px;
 }
 
+/* Force ALL icons same size */
 .icons img {
   width: 40px;
   height: 40px;
@@ -193,13 +210,18 @@ img {
   object-fit: contain;
 }
 
+/* ================= FOOTER ================= */
+
 .footer-text {
   margin-top: 35px;
   color: #5a4b67;
   font-size: 0.95rem;
 }
 
+/* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
+
   .menu {
     justify-content: flex-start;
   }
@@ -256,6 +278,7 @@ img {
     grid-template-columns: 1fr;
   }
 
+  /* Smaller icons on phone */
   .icons a {
     width: 40px;
     height: 40px;
