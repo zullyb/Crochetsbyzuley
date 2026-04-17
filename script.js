@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuList = document.getElementById("menu-list");
   const menuLinks = document.querySelectorAll(".menu-list a");
 
-  if (menuToggle) {
+  if (menuToggle && menuList) {
     menuToggle.addEventListener("click", () => {
       menuList.classList.toggle("show");
     });
@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   menuLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      menuList.classList.remove("show");
+      if (menuList) {
+        menuList.classList.remove("show");
+      }
     });
   });
 });
