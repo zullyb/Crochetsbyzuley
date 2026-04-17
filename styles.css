@@ -76,6 +76,10 @@ img {
   padding: 70px 20px;
 }
 
+.home-section {
+  background: #e9e7ef;
+}
+
 .two-column {
   max-width: 1200px;
   margin: 0 auto;
@@ -89,6 +93,21 @@ img {
   width: 100%;
 }
 
+.text h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.welcome-text {
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+}
+
+.text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
 .image-wrap {
   width: 100%;
   display: flex;
@@ -98,104 +117,8 @@ img {
 
 .main-img {
   width: 100%;
-  max-width: 500px;
+  max-width: 520px;
   height: auto;
-  border-radius: 12px;
-}
-
-.small-img {
-  max-width: 220px;
-  margin-top: 20px;
-}
-
-.tiny-img {
-  max-width: 140px;
-  margin: 20px auto 0;
-}
-
-.home-section {
-  background: #e9e7ef;
-}
-
-.home-section h1,
-.about-section h1,
-.collection-top h1,
-.socials-section h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.welcome-text {
-  font-size: 1.4rem;
-  margin-bottom: 16px;
-}
-
-.home-section .text {
-  text-align: left;
-}
-
-.about-section {
-  background: #9ebaef;
-}
-
-.light-text {
-  color: white;
-}
-
-.collection-top {
-  background: #f3eef9;
-}
-
-.collection-text {
-  text-align: center;
-}
-
-.gallery-section {
-  background: #ffffff;
-}
-
-.gallery {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.gallery img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 14px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
-}
-
-.socials-banner {
-  background: #f0d8e9;
-}
-
-.socials-section {
-  text-align: center;
-  background: #ffffff;
-}
-
-.icons {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  flex-wrap: wrap;
-  margin-top: 25px;
-}
-
-.icons img {
-  width: 42px;
-  height: 42px;
-}
-
-.footer-text {
-  margin-top: 35px;
-  color: #5a4b67;
-  font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
@@ -235,29 +158,19 @@ img {
     gap: 30px;
   }
 
-  .home-section .text,
-  .about-section .text,
-  .collection-top .text {
-    text-align: center;
+  .text h1 {
+    font-size: 2.4rem;
   }
 
-  .small-img {
-    margin-left: auto;
-    margin-right: auto;
+  .welcome-text {
+    font-size: 1.2rem;
   }
 
-  .gallery {
-    grid-template-columns: 1fr;
+  .text p {
+    font-size: 1rem;
   }
 
   .page-section {
     padding: 40px 16px;
-  }
-
-  .home-section h1,
-  .about-section h1,
-  .collection-top h1,
-  .socials-section h1 {
-    font-size: 2.2rem;
   }
 }
