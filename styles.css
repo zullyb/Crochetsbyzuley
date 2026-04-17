@@ -89,6 +89,10 @@ img {
   background: #f3eef9;
 }
 
+.socials-banner {
+  background: #f0d8e9;
+}
+
 .socials-section {
   text-align: center;
   background: #ffffff;
@@ -131,6 +135,7 @@ img {
 .main-img {
   width: 100%;
   max-width: 520px;
+  height: auto;
 }
 
 .small-img {
