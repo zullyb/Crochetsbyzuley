@@ -20,7 +20,7 @@ img {
   display: block;
 }
 
-/* ================= MENU ================= */
+/* MENU */
 
 .menu {
   display: flex;
@@ -31,68 +31,55 @@ img {
   position: sticky;
   top: 0;
   z-index: 1000;
-  min-height: 70px;
+  min-height: 64px;
   width: 100%;
 }
 
 .menu-list {
   display: flex;
-  gap: 25px;
+  gap: 24px;
   list-style: none;
   margin: 0;
   padding: 0;
-  z-index: 2;
 }
 
-.menu-list li a {
+.menu-list a {
   text-decoration: none;
   color: #3b0014;
   font-weight: bold;
   font-size: 18px;
 }
 
-.menu-list li a:hover {
-  color: #6c4dc3;
-}
-
 .logo {
   position: absolute;
-  right: 14px;
+  right: 12px;
   width: 120px;
-  max-width: 32%;
   height: auto;
-  z-index: 1;
 }
 
 .menu-toggle {
   display: none;
   position: absolute;
-  left: 14px;
+  left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 28px;
+  font-size: 26px;
   background: none;
   border: none;
   cursor: pointer;
   color: #3b0014;
-  z-index: 3;
   padding: 0;
 }
 
-/* ================= SECTIONS ================= */
+/* GENERAL SECTIONS */
 
 .page-section {
-  padding: 50px 18px;
   width: 100%;
+  padding: 50px 18px;
 }
 
 .home-section {
   background: #e9e7ef;
-}
-
-.about-section {
-  background: #9ebaef;
-  color: white;
 }
 
 .collection-top {
@@ -109,7 +96,7 @@ img {
   background: #f3f3f3;
 }
 
-/* ================= LAYOUT ================= */
+/* HOME / GENERAL LAYOUT */
 
 .two-column {
   max-width: 1100px;
@@ -133,13 +120,12 @@ img {
 
 .welcome-text {
   font-size: 1.3rem;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .text p {
   font-size: 1.1rem;
   line-height: 1.6;
-  word-wrap: break-word;
 }
 
 .image-wrap {
@@ -147,7 +133,6 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-width: 0;
 }
 
 .main-img {
@@ -156,17 +141,65 @@ img {
   height: auto;
 }
 
-.small-img {
-  max-width: 180px;
-  margin-top: 18px;
+/* ABOUT PAGE */
+
+.about-section {
+  background: #f6f6f6;
+  color: #2f2237;
 }
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-text-block {
+  max-width: 700px;
+  margin: 0 auto 28px;
+}
+
+.about-text-block h1 {
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+}
+
+.about-text-block p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.about-dog-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 26px 0;
+}
+
+.about-dog {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+}
+
+.about-photo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+}
+
+/* COLLECTION */
 
 .tiny-img {
   max-width: 110px;
   margin: 18px auto 0;
 }
-
-/* ================= GALLERY ================= */
 
 .gallery-section {
   padding: 50px 18px;
@@ -178,7 +211,6 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  width: 100%;
 }
 
 .gallery img {
@@ -189,7 +221,7 @@ img {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
-/* ================= SOCIAL ICONS ================= */
+/* SOCIALS */
 
 .icons {
   display: flex;
@@ -211,8 +243,6 @@ img {
 .icons img {
   width: 36px;
   height: 36px;
-  max-width: 36px;
-  max-height: 36px;
   object-fit: contain;
 }
 
@@ -222,48 +252,45 @@ img {
   font-size: 0.95rem;
 }
 
-/* ================= MOBILE ================= */
+/* MOBILE */
 
 @media (max-width: 768px) {
   .menu {
     justify-content: flex-start;
-    min-height: 58px;
+    min-height: 56px;
     padding: 10px 12px;
   }
 
   .menu-toggle {
     display: block;
-    font-size: 24px;
   }
 
   .menu-list {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 58px;
+    top: 56px;
     left: 0;
     width: 100%;
     background: #9ebaef;
     text-align: left;
     padding: 10px 18px;
-    z-index: 5;
-    gap: 10px;
+    gap: 8px;
   }
 
   .menu-list.show {
     display: flex;
   }
 
-  .menu-list li a {
-    font-size: 16px;
+  .menu-list a {
     display: block;
+    font-size: 16px;
     padding: 6px 0;
   }
 
   .logo {
-    width: 105px;
+    width: 100px;
     right: 10px;
-    max-width: 42%;
   }
 
   .page-section {
@@ -278,17 +305,14 @@ img {
 
   .text h1 {
     font-size: 2rem;
-    margin-bottom: 12px;
   }
 
   .welcome-text {
     font-size: 1.05rem;
-    margin-bottom: 10px;
   }
 
   .text p {
     font-size: 0.98rem;
-    line-height: 1.5;
   }
 
   .main-img {
@@ -296,27 +320,30 @@ img {
     margin: 0 auto;
   }
 
-  .small-img {
-    max-width: 130px;
-    margin: 14px auto 0;
+  .about-text-block h1 {
+    font-size: 2rem;
   }
 
-  .tiny-img {
-    max-width: 90px;
+  .about-text-block p {
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .about-dog {
+    max-width: 320px;
+  }
+
+  .about-photo {
+    max-width: 220px;
   }
 
   .gallery {
     grid-template-columns: 1fr;
-    gap: 14px;
   }
 
   .gallery img {
     max-width: 320px;
     margin: 0 auto;
-  }
-
-  .socials-banner {
-    padding: 30px 14px;
   }
 
   .icons a {
@@ -327,7 +354,5 @@ img {
   .icons img {
     width: 30px;
     height: 30px;
-    max-width: 30px;
-    max-height: 30px;
   }
 }
