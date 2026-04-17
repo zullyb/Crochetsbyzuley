@@ -18,6 +18,8 @@ img {
   display: block;
 }
 
+/* ================= MENU ================= */
+
 .menu {
   display: flex;
   justify-content: center;
@@ -72,6 +74,8 @@ img {
   z-index: 3;
 }
 
+/* ================= SECTIONS ================= */
+
 .page-section {
   padding: 70px 20px;
 }
@@ -79,6 +83,21 @@ img {
 .home-section {
   background: #e9e7ef;
 }
+
+.about-section {
+  background: #9ebaef;
+  color: white;
+}
+
+.collection-top {
+  background: #f3eef9;
+}
+
+.socials-section {
+  text-align: center;
+}
+
+/* ================= LAYOUT ================= */
 
 .two-column {
   max-width: 1200px;
@@ -94,13 +113,13 @@ img {
 }
 
 .text h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
 }
 
 .welcome-text {
-  font-size: 1.5rem;
-  margin-bottom: 18px;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
 }
 
 .text p {
@@ -109,7 +128,6 @@ img {
 }
 
 .image-wrap {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,10 +136,68 @@ img {
 .main-img {
   width: 100%;
   max-width: 520px;
-  height: auto;
 }
 
+.small-img {
+  max-width: 220px;
+  margin-top: 20px;
+}
+
+.tiny-img {
+  max-width: 140px;
+  margin: 20px auto 0;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery-section {
+  padding: 60px 20px;
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ================= SOCIAL ICONS ================= */
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* ================= FOOTER ================= */
+
+.footer-text {
+  margin-top: 35px;
+  color: #5a4b67;
+  font-size: 0.95rem;
+}
+
+/* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
+
   .menu {
     justify-content: flex-start;
   }
@@ -159,7 +235,7 @@ img {
   }
 
   .text h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .welcome-text {
@@ -172,5 +248,14 @@ img {
 
   .page-section {
     padding: 40px 16px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .icons img {
+    width: 32px;
+    height: 32px;
   }
 }
