@@ -1,5 +1,3 @@
-/* ================= BASE ================= */
-
 html {
   scroll-behavior: smooth;
 }
@@ -10,216 +8,105 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #2f2237;
-  background: #ffffff;
+  font-family: Arial;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* ================= MENU ================= */
-
+/* MENU */
 .menu {
   display: flex;
   justify-content: center;
   align-items: center;
   background: #9ebaef;
-  padding: 18px 20px;
+  padding: 18px;
   position: sticky;
   top: 0;
-  z-index: 1000;
-  min-height: 90px;
 }
 
 .menu-list {
   display: flex;
   gap: 25px;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  z-index: 2;
 }
 
-.menu-list li a {
+.menu-list a {
   text-decoration: none;
   color: #3b0014;
   font-weight: bold;
-  font-size: 18px;
-}
-
-.menu-list li a:hover {
-  color: #6c4dc3;
 }
 
 .logo {
   position: absolute;
   right: 20px;
-  width: 150px;
-  max-width: 30%;
-  z-index: 1;
+  width: 140px;
 }
 
 .menu-toggle {
   display: none;
   position: absolute;
   left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
   font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #3b0014;
-  z-index: 3;
 }
 
-/* ================= SECTIONS ================= */
-
+/* SECTIONS */
 .page-section {
   padding: 70px 20px;
 }
 
-.home-section {
-  background: #e9e7ef;
-}
-
-.about-section {
-  background: #9ebaef;
-  color: white;
-}
-
-.collection-top {
-  background: #f3eef9;
-}
-
-/* 🌸 Pink banner (socials) */
 .socials-banner {
   background: #f0d8e9;
-  padding: 80px 20px;
 }
 
-/* 🌸 Bottom socials section */
 .socials-section {
   text-align: center;
   background: #f3f3f3;
 }
 
-/* ================= LAYOUT ================= */
-
+/* LAYOUT */
 .two-column {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
   gap: 60px;
-}
-
-.text {
-  width: 100%;
-}
-
-.text h1 {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-}
-
-.welcome-text {
-  font-size: 1.4rem;
-  margin-bottom: 16px;
-}
-
-.text p {
-  font-size: 1.2rem;
-  line-height: 1.6;
 }
 
 .image-wrap {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .main-img {
   width: 100%;
-  max-width: 520px;
-  height: auto;
+  max-width: 500px;
 }
 
-.small-img {
-  max-width: 220px;
-  margin-top: 20px;
-}
-
-.tiny-img {
-  max-width: 140px;
-  margin: 20px auto 0;
-}
-
-/* ================= GALLERY ================= */
-
-.gallery-section {
-  padding: 60px 20px;
-}
-
-.gallery {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.gallery img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 14px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
-}
-
-/* ================= SOCIAL ICONS ================= */
-
+/* ICONS */
 .icons {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
-  margin-top: 25px;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-/* Equal box for each icon */
 .icons a {
+  width: 48px;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 48px;
-  height: 48px;
 }
 
-/* Force ALL icons same size */
 .icons img {
   width: 40px;
   height: 40px;
-  max-width: 40px;
-  max-height: 40px;
   object-fit: contain;
 }
 
-/* ================= FOOTER ================= */
-
 .footer-text {
-  margin-top: 35px;
-  color: #5a4b67;
-  font-size: 0.95rem;
+  margin-top: 30px;
 }
 
-/* ================= MOBILE ================= */
-
+/* MOBILE */
 @media (max-width: 768px) {
 
   .menu {
@@ -234,51 +121,20 @@ img {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 90px;
-    left: 0;
+    top: 80px;
     width: 100%;
     background: #9ebaef;
-    text-align: center;
-    padding: 10px 0;
-    z-index: 5;
   }
 
   .menu-list.show {
     display: flex;
   }
 
-  .logo {
-    width: 120px;
-    right: 15px;
-  }
-
   .two-column {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 30px;
   }
 
-  .text h1 {
-    font-size: 2.2rem;
-  }
-
-  .welcome-text {
-    font-size: 1.2rem;
-  }
-
-  .text p {
-    font-size: 1rem;
-  }
-
-  .page-section {
-    padding: 40px 16px;
-  }
-
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
-  /* Smaller icons on phone */
   .icons a {
     width: 40px;
     height: 40px;
@@ -287,7 +143,5 @@ img {
   .icons img {
     width: 32px;
     height: 32px;
-    max-width: 32px;
-    max-height: 32px;
   }
 }
